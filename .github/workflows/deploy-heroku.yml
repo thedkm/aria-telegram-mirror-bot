@@ -14,6 +14,7 @@ jobs:
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           region: "us"
           usedocker: true
+          stack: container
           docker_heroku_process_type: worker
         env:
           HD_CREDENTIALS: ${{secrets.CREDENTIALS}}
